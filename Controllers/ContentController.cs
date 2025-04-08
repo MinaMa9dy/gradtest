@@ -14,12 +14,7 @@ namespace gradtest.Controllers
         {
             _context = context;
         }
-        [HttpGet]
-        public async Task<IActionResult> getAll()
-        {
-            var res = await _context.contents.ToListAsync();
-            return Ok(res);
-        }
+        
         [HttpGet("{type}")]
         //[ProducesResponseType(200,Type = typeof (IEnumerable<>))]
         public async Task<IActionResult> getWithType(string type)
