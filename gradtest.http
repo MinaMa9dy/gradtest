@@ -1,0 +1,6 @@
+@gradtest_HostAddress = http://localhost:5098
+
+GET {{gradtest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
