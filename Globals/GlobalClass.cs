@@ -1,4 +1,4 @@
-﻿namespace gradtest {
+﻿namespace gradtest.Globals {
     public static class GlobalClass
     {
         public static Dictionary<string, byte> map = new Dictionary<string, byte>{
@@ -18,7 +18,7 @@
         public static int checkerType(string type)
         {
             if (type != "videos" && type != "blogs") return -1;
-            return (type == "videos" ? 0 : 1);
+            return type == "videos" ? 0 : 1;
         }
         public static int checkerCategory(string category)
         {
